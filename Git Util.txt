@@ -1,38 +1,59 @@
 clear -> limpa a janela 
 
-git init -> starta repositorio
+*git init -> starta repositorio
 
-git status -> ver o status do rep / modificações 
+*git status -> ver o status do rep / modificações 
 
-git add "arquivo_escolhido" -> add o arquivo  que pedir 
+*git log -> mostrar a "imagem do repositorio " "foto "
 
-git add . -> todos os arquivos do rep
+*git log --grep "teste" -> Procurar em especifico um arquivo conforme contexto da palavra escrita
 
-git commit -m "" -> definir a mensagem "m" da versao / commit 
+HASH DA FOTO: ( atravez do *git log )
 
-git push -> subir pro endereço definido 
+''
+commit 37f43bb09dd580f962871db192581df4e98def63 -> hash 
+''
 
-git remote add origin -> definir o repositorio salvo no Github 
+*git checkout 37f43bb09dd580f962871db192581df4e98def63 -> volto a foto pra ca ignorando modificações prévias
 
-git push --set-upstream origin master -> subir pra branch MASTER
+*git checkout master -> voltar pra master 
 
-git reflog -> historico de modificações 
+*git show "hash" -> mostra as mudanças 
 
-git reset --hard (ID) -> voltar um commit especifico na maquina local 
+*git add "arquivo_escolhido" -> add o arquivo  que pedir 
 
-git branch -> mostrar as branch disponiveis
+*git add . -> todos os arquivos do rep
 
-git branch (nome) -> criar nova branch // "staging" é utilizado regularmente para nomear as branch's de teste 
+*git commit -m "" -> definir a mensagem "m" da versao / commit 
+** "-a" -> adiciona ja o arquivo direto no commit
 
-git checkout (nome branch) -> mudar de branch 
+*git whatchanged -> mostra tudo q mudou des da ultima att
 
-git merge (nome da branch com os commit's desejados) -> faz o processo de merge da branch desejada para a atual
+*git push -> subir pro endereço definido 
 
-git pull -> puxar as ultimas commits feitas na branch 
+*git remote add origin -> definir o repositorio salvo no Github 
 
-git checkout -b (nome da nova branch) (nome da branch usada de referência) -> cria uma branch e ja muda para ela 
+*git remote -v -> mostra as origins 
 
-touch .gitignore -> cria o arquivo gitignore, depois só entrar no mesmo e escrever o nome dos aquivos e extenção ou pastas seguidos de "/" que não devem ser enviados.
+*git push --set-upstream origin master -> subir pra branch MASTER
+
+*git reflog -> historico de modificações 
+
+*git reset --hard (ID) -> voltar um commit especifico na maquina local 
+
+*git branch -> mostrar as branch disponiveis
+
+*git branch (nome) -> criar nova branch // "staging" é utilizado regularmente para nomear as branch's de teste 
+
+*git checkout (nome branch) -> mudar de branch 
+
+*git merge (nome da branch com os commit's desejados) -> faz o processo de merge da branch desejada para a atual
+
+*git pull -> puxar as ultimas commits feitas na branch 
+
+*git checkout -b (nome da nova branch) (nome da branch usada de referência) -> cria uma branch e ja muda para ela 
+
+*touch .gitignore -> cria o arquivo gitignore, depois só entrar no mesmo e escrever o nome dos aquivos e extenção ou pastas seguidos de "/" que não devem ser enviados.
 
 
 
