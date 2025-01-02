@@ -38,9 +38,9 @@ Ir pra nova branch e baixar a imagem no local ***
 
 00**Fazer merge 
 
-*git chechout master -> mudar pra principal 
+*git checkout master -> mudar pra principal 
 
-*git merge "feat/teste-apaga" -> fazer o merge
+*git merge "feat/teste-apaga" -> fazer o merge com essa branch
 
 00**Fazer merge
 
