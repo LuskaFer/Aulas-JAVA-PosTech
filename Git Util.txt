@@ -1,3 +1,9 @@
+FEATURE BRANCH DEVELOPMENT -> MODELO DE TRABALHO
+
+https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+
+
+
 clear -> limpa a janela 
 
 *git init -> starta repositorio
@@ -132,4 +138,6 @@ Procedimento padrão para adicionar commit's de uma branch para outra:
 5 - Comentar as atualizações 
 
 6 - Verificar as revisão de outros dev's e se necessário criar nova commit com as correções comentadas marcando os dev's
+
+GITHUB ESTETICA pela Karion
 
