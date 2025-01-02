@@ -1,9 +1,17 @@
-FEATURE BRANCH DEVELOPMENT -> MODELO DE TRABALHO
+####WORKFLOW'S
+
+###FEATURE BRANCH DEVELOPMENT -> MODELO DE TRABALHO
 
 https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
 
+###TAGS
 
+https://git-scm.com/book/en/v2/Git-Basics-Tagging
+https://semver.org/
 
+####WORKFLOW'S XXXX
+
+####COMMANDS
 clear -> limpa a janela 
 
 *git init -> starta repositorio
@@ -87,6 +95,14 @@ Ir pra nova branch e baixar a imagem no local ***
 
 *touch .gitignore -> cria o arquivo gitignore, depois só entrar no mesmo e escrever o nome dos aquivos e extenção ou pastas seguidos de "/" que não devem ser enviados.
 
+// TAG //	
+
+*git tag -> ver as tags existentes 
+
+*git fetch --tags -> puxar a tag do github 
+
+///////////
+
 
 
 // MERGE // 
@@ -139,5 +155,11 @@ Procedimento padrão para adicionar commit's de uma branch para outra:
 
 6 - Verificar as revisão de outros dev's e se necessário criar nova commit com as correções comentadas marcando os dev's
 
-GITHUB ESTETICA pela Karion
+####COMMANDS XXXX
 
+####ESTHETICS
+
+*GITHUB ESTETICA pela Karyah
+
+
+####ESTHETICS XXXX
