@@ -18,6 +18,18 @@ commit 37f43bb09dd580f962871db192581df4e98def63 -> hash
 
 *git checkout master -> voltar pra master 
 
+*git branch -> mostra todas as branch ( ramificações ) 
+
+*git checkout -b feat/atts -> nova branch de features: atualizações 
+
+Ir pra nova branch e baixar a imagem no local ***
+
+*git chechout feat/atts
+
+*git push origin feat/atts
+
+Ir pra nova branch e baixar a imagem no local ***
+
 *git show "hash" -> mostra as mudanças 
 
 *git add "arquivo_escolhido" -> add o arquivo  que pedir 
