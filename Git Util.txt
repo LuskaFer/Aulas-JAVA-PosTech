@@ -24,11 +24,25 @@ commit 37f43bb09dd580f962871db192581df4e98def63 -> hash
 
 Ir pra nova branch e baixar a imagem no local ***
 
-*git chechout feat/atts
+*git chechout "feat/atts"
 
-*git push origin feat/atts
+*git push origin "feat/atts"
 
 Ir pra nova branch e baixar a imagem no local ***
+
+00**Apagar a branch antiga apos att 
+
+*git branch -d "feat/atts"
+
+00**Apagar a branch antiga apos att 
+
+00**Fazer merge 
+
+*git chechout master -> mudar pra principal 
+
+*git merge "feat/teste-apaga" -> fazer o merge
+
+00**Fazer merge
 
 *git show "hash" -> mostra as mudanças 
 
