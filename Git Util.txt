@@ -71,9 +71,15 @@ Ir pra nova branch e baixar a imagem no local ***
 
 *git push -> subir pro endereço definido 
 
+// REMOTE //
+
 *git remote add origin -> definir o repositorio salvo no Github 
 
+*git remote set-url origin -> setar o repositorio
+
 *git remote -v -> mostra as origins 
+
+///////////
 
 *git push --set-upstream origin master -> subir pra branch MASTER
 

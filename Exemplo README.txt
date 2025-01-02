@@ -1,4 +1,4 @@
-# Sistema de Reserva de Salas
+# Nome
 
 Esse projeto é um sistema de reserva de salas desenvolvido em Java com Spring Boot. Ele permite gerenciar usuários, salas e realizar reservas, com uma interface que facilita o teste e a inicialização de dados.
 
@@ -66,7 +66,7 @@ O projeto está configurado para usar um banco de dados H2. Na inicialização, 
 
 Use a coleção do Postman para facilitar os testes:
 
-🔗 **[Acessar Coleção no Postman](https://api.postman.com/collections/15767856-87ba9f19-c3c1-4beb-b033-acd2913740b9?access_key=PMAT-01JBAWM1BXDBPVM33Q33YEVJAA)**
+🔗 **[Acessar Coleção no Postman](https://api.postman.com/collections/15767856-87ba9f19-c3c1-4beb-b033-acd2913740b9?access_key**
 
 
 ### Usuário
