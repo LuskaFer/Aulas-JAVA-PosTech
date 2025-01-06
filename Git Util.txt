@@ -58,7 +58,9 @@ Ir pra nova branch e baixar a imagem no local ***
 
 00**Fazer merge
 
-*git show "hash" -> mostra as mudanças 
+// SHOW //
+
+*git show "hash" -> mostra as mudanças naquele commit
 
 *git add "arquivo_escolhido" -> add o arquivo  que pedir 
 
@@ -137,13 +139,16 @@ Procedimento padrão para adicionar commit's de uma branch para outra:
 4 - Finalizar o Trabalho na branch temporária 
 
 5 - git checkout -> na branch principal 
+*** adicionando um "-b" e "nome-branc" ja cria 
 
 6 - git pull -> puxar os ultimos commits 
 
 7 - git merge (nome da branch com os commit's desejados) -> Mergiar (unir) o código da branch temporário com a branch principal(depois de testar)
 
-8 - git push -> da branch principal 
-
+8 - git push -> sobe o commit pro repositorio na nuvem
+**pode adicionar o: --force -> ( força subir de qualquer maneira ( pode quebrar p/ tdos ) 
+**** usar o reflog pra tentar arrumar cada repositorio / commit que foi alterado
+****** pode fazer o protect pelo github para anular o uso do force
 ///////////
 
 
@@ -161,11 +166,78 @@ Procedimento padrão para adicionar commit's de uma branch para outra:
 
 6 - Verificar as revisão de outros dev's e se necessário criar nova commit com as correções comentadas marcando os dev's
 
+
+
+
+// RESET //
+
+*git reset --hard "" -> ele volta para o commit anterior selecionado definindo o ultimo commit inserindo a hash do commit desejado.
+
+*git cherry-pick "" -> traz de volta um commit apagado que ainda esta na maquina usando o hash do historico do reflog do mesmo no '""'
+
+/////////////
+
+
 ####COMMANDS XXXX
 
 ####ESTHETICS
 
-*GITHUB ESTETICA pela Karyah
-
-
 ####ESTHETICS XXXX
+
+####INFORMAÇÕES
+
+
+
+
+///HOOKS -> São paramentos especificos para serem definidos antes do commit 
+ 
+///REFLOG -> Referencias de logs com informações de como as coisas foram feitas 
+ 
+*git reflog -> mostra todas as alterações 
+ 
+*git reflog --grep-reflog "exemplo" -> pesquisa nos commits a palavra escrita 
+ 
+///BISECT -> ele busca commits que tenham coisas em comum ou relacionadas no meio de varios para achar bugs por exemplo
+**entra em uma listagem pra ir excluindo de 1 em 1 os "bad" para achar o erro ou "good"
+***além dos commits da pra fazer por versionamento 
+
+*git tag -> ver os tags "versionamentos" do projeto 
+
+*git bisect start -> inicia e fica esperando o commit antes do erro e o depois ( bom e ruim )
+
+*git bisect bad "" -> se n colocar o hash ele assume que é o commit atual 
+ 
+*git bisect good "" -> indica o commit sem o erro 
+
+*git bisect reset -> encerrar as buscas 
+ 
+--> apos algumas referencias "good" e "bad" ele mostra qual commit introduziu o erro...
+
+*git log --oneline -> mostrar logs em 1 linha 
+
+///REBASE -> LOCALMENTE  
+***tem uma tela unica no console / tem que escolher a maneira de fazer o rebase conforme os comandos disponiveis 
+**** pode ser usado para a gestão dos commits 
+Squash and Merge -> juntando dois commit em 1 
+
+*git diff "main" -> mostra a diferença das branch / commits 
+
+*git rebase "master" "topic" -> une tudo atualizado da master para a topic como um merge 
+
+*git rebase -i "main" ->diferença da branch atual baseada na main
+
+*git rebase "nome-da-branch" -> ja uni os commits e da merge
+
+*git commit --amend -> juntar os arquivos com o ultimo commit
+
+// CONFLITO DE MERGE / EDIÇÕES / COMMITS 
+
+*Usar o rebase para arrumar manualmente no console os proprios comandos e depois inserir o comando:
+
+*git rebase --continue ou --abort -> fazer o rebase com o continue e desistir com o abort 
+
+/// MERGE X REBASE ///
+***uso de cada particular porém o merge pode "poluir" o historico do repositório 
+
+
+####INFORMAÇÕES XXXX
